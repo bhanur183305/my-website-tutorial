@@ -13,15 +13,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://bhanur183305.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/my-website-tutorial/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'bhanur183305', // Usually your GitHub org/user name.
+  projectName: 'my-website-tutorial', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -72,6 +72,13 @@ const config = {
           src: 'img/logo.svg',
         },
         items: [
+        {
+         type: 'docSidebar',
+            sidebarId: 'tutorialSidebar',
+            position: 'left',
+            label: 'Python',
+          },
+
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
@@ -85,6 +92,13 @@ const config = {
             position: 'right',
           },
         ],
+      },
+      algolia: {
+
+        apiKey: "511df6c011d065f76240ae6ff726bd4e",
+        indexName: "dev_docusaurus_YT",
+        appId: "23I1POYHEE",
+
       },
       footer: {
         style: 'dark',
